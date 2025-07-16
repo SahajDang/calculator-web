@@ -4,88 +4,76 @@ A web-based calculator with a React frontend and a Flask backend. The calculator
 
 ---
 
-## Features
+## 🚀 Live Demo
 
-- Evaluate complex mathematical expressions including `+`, `-`, `*`, `/`, and parentheses.
-- Support for variables with assignment, e.g. `x = 5`, `y = x + 3`.
-- Real-time evaluation via a REST API.
-- Clean and modern UI built with React.
-- Backend implemented in Flask with custom tokenizer, parser, and evaluator.
-- CORS enabled for frontend-backend communication.
+- 🔗 **Frontend:** [https://calculator-frontend-g1d5.onrender.com](https://calculator-frontend-g1d5.onrender.com)
+- 🛠️ **Backend API:** [https://calculator-backend-mof7.onrender.com/evaluate](https://calculator-backend-mof7.onrender.com/evaluate)
 
 ---
 
-## Tech Stack
+## ✨ Features
 
-- **Frontend:** React (with hooks), CSS for styling
+- Evaluate complex mathematical expressions including `+`, `-`, `*`, `/`, and parentheses
+- Support for variables with assignment, e.g. `x = 5`, `y = x + 3`
+- Real-time evaluation via a REST API
+- Clean and modern UI built with React
+- Backend implemented in Flask with custom tokenizer, parser, and evaluator
+- CORS enabled for seamless frontend-backend communication
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** React (Vite), CSS
 - **Backend:** Python, Flask, Flask-CORS
+- **Deployment:** Render (Frontend + Backend)
 - **Communication:** REST API (JSON)
 
 ---
 
-## Folder Structure
+## 📁 Folder Structure
+
 calculator-web/
 ├── backend/
 │ └── app.py # Flask backend API
 ├── frontend/
 │ ├── src/
-│ │ └── App.jsx # React main component
+│ │ └── App.jsx # Main React component
 │ ├── public/
 │ └── package.json # React project config
 └── README.md
 
----
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.x
-- Node.js and npm/yarn
 
 ---
 
-## Backend Setup
+## ⚙️ Getting Started
 
-1. Navigate to the backend folder:
-```bash
+### 🔙 Backend Setup
+
+```
 cd backend
-```
-2. Create and activate a virtual environment (optional but recommended):
-```bash
 python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
-3. Install dependencies:
-```bash
-pip install flask flask-cors
+##### Activate:
+Windows:
 ```
-4. Run the Flask app:
-```bash
+venv\Scripts\activate
+```
+macOS/Linux:
+```
+source venv/bin/activate
+pip install -r requirements.txt
 python app.py
-
 ```
-## Frontend Setup
 
-1. Navigate to the frontend folder:
-```bash
+### 🔜 Frontend Setup
+```
 cd frontend
-```
-2. Install dependencies:
-```bash
 npm install
-# or
-yarn install
+npm run dev
 ```
-3. Start the React app:
-```bash
-npm start
-# or
-yarn start
-```
---- 
-
-## Usage
+---
+## 💻 Usage
 - Enter mathematical expressions or assignments in the input field.
 
 - Click Evaluate or press Enter to get the result.
@@ -96,38 +84,46 @@ yarn start
 
 ---
 
-## API Endpoint
-#### POST /evaluate
-- Request JSON:
-```bash
+## 🔌 API Endpoint
+POST /evaluate
+- Request (JSON):
+```
 {
   "expression": "3 + 4 * (2 - 1)"
 }
 ```
-- Response JSON (success):
-```bash
+- Response (Success):
+```
 {
   "result": 7
 }
 ```
-- Response JSON (error):
-```bash
+- Response (Error):
+```
 {
   "error": "Error message here"
 }
 ```
----
 
-## Screenshots
-![image](https://github.com/user-attachments/assets/6370e6b7-8ff5-4495-b81b-2ab7ddcd3154)
-
----
-
-## License
-This project is open-source and free to use.
+## 📸 Screenshots
+<img width="484" height="859" alt="image" src="https://github.com/user-attachments/assets/d646b4c1-0668-4b98-bd50-75f809d1999c" />
+<img width="477" height="872" alt="image" src="https://github.com/user-attachments/assets/0872022d-e69b-4bab-acc8-c89633abe547" />
 
 ---
 
-## Author
+## 🪪 License
+
+This project is open-source and free to use under the MIT License.
+
+---
+
+## 👨‍💻 Author 
+ 
 Sahaj Dang
-- https://github.com/SahajDang
+
+🔗 [GitHub @SahajDang](https://github.com/SahajDang)
+
+---
+
+<div align="center">Built with ❤️ using React & Flask</div>
+
