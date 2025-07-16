@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="app-container"
       style={{
-        minHeight: "100vh",
+        height: "100vh",
         backgroundColor: "#282c34",
         display: "flex",
         justifyContent: "center",

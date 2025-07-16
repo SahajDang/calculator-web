@@ -1,6 +1,6 @@
 /* Center container */
 /* Make the whole page a flex container and center content */
-html, body {
+html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
