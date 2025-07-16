@@ -32,7 +32,7 @@ function App() {
     setResult(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/evaluate", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/evaluate`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ expression: input }),
